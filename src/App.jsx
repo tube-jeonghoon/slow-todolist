@@ -79,7 +79,7 @@ function App() {
         <TodoListContainer>
           {todos.map((todo) => (
             <TodoCard key={todo.id}>
-              <span>id: {todo.id}</span>
+              {/* <span>id: {todo.id}</span> */}
               <span>제목: {todo.title}</span>
               <span>할 일: {todo.body}</span>
               <Button onClick={() => onDeleteTodo(todo.id)}>삭제하기</Button>
